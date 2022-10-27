@@ -60,7 +60,6 @@ p {
 }
 
 .nft-background {
-    display: flex;
     width: 100%;
     height: 18.875rem;
     border-radius: .6rem;
@@ -80,20 +79,23 @@ p {
     cursor: pointer;
 }
 
-.nft-img:hover {
+.nft-background:hover > .nft-img{
     opacity: .5;
 }
 
-.nft-img:hover > .eye-icon {
+.nft-background:hover > .eye-icon {
     display: block;
 }
 
 .eye-icon {
     display: none;
+    position: relative;
+    left: 128px;
+    top: -172px;
     width: 3rem;
     height: 3rem;
     opacity: 1;
-    z-index: 4;
+    z-index: 2;
 }
 
 .about {
@@ -164,6 +166,11 @@ p {
 
     .days-price-container {
         margin-bottom: 1rem;
+    }
+
+    .eye-icon {
+        left: 117px;
+        top: -165px;
     }
 
 }
