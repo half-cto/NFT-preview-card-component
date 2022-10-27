@@ -1,0 +1,169 @@
+* {
+    font-family: 'Outfit';
+    font-style: normal;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: auto;
+    background-color: #0D192C;
+}
+
+h1 {
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 28px;
+    color: #fff;
+    padding-bottom: 1rem;
+    padding-top: 1.5rem;
+    cursor: pointer;
+}
+
+h2 {
+    font-weight: 600;
+    line-height: 20px;
+    color: #00FFF8;
+}
+
+strong {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: #fff;
+    cursor: pointer;
+}
+
+p {
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 26px;
+    color: #8BACD9;
+}
+
+.line {
+    background-color: #2E405A;
+    height: .0625rem;
+    width: auto;
+}
+
+.main-card {
+    background-color: #15263F;
+    width: 18.876rem;
+    height: 33.75rem;
+    border-radius: 15px;
+    padding: 1.5rem 1.5rem 2rem 1.5rem
+
+}
+
+.nft-background {
+    display: flex;
+    width: 100%;
+    height: 18.875rem;
+    border-radius: .6rem;
+    background-color: #00FFF8;   
+}
+
+.nft-img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url("../images/image-equilibrium.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+    border-radius: .5rem;
+    cursor: pointer;
+}
+
+.nft-img:hover {
+    opacity: .5;
+}
+
+.nft-img:hover > .eye-icon {
+    display: block;
+}
+
+.eye-icon {
+    display: none;
+    width: 3rem;
+    height: 3rem;
+    opacity: 1;
+    z-index: 4;
+}
+
+.about {
+    padding-bottom: 1rem;
+}
+
+.days-price-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1.5rem;
+}
+
+.price-container {
+    display: flex;
+    align-items: center;
+}
+
+.price {
+    display: inline;
+    margin-left: .52rem;
+}
+
+.time-container {
+    display: flex;
+    align-items: center;
+}
+
+.time-left {
+    display: inline;
+    margin-left: .5rem;
+}
+
+.author-container {
+    display: flex;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+.avatar-picture {
+    width: 2.0625rem;
+    height: auto;
+    border: 1px solid #FFFFFF;
+    border-radius: 20px;
+}
+
+.footer-p {
+    font-size: 16px;
+    margin-left: 1rem;
+}
+
+@media screen and (max-width: 375px) {
+   
+    .main-card {
+        width: 17.4375rem;
+        height: 30.9375rem;
+        border-radius: 15px;
+        padding: 1.5rem 1.5rem 2rem 1.5rem
+    
+    }
+
+    .nft-background {
+        height: 17.375rem; 
+    }
+    
+    h1 {
+        padding-bottom: .75rem;
+    }
+
+    .days-price-container {
+        margin-bottom: 1rem;
+    }
+
+}
